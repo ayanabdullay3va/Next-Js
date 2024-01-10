@@ -1,0 +1,40 @@
+{
+  "name": "nextjs-author",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "run": "nodemon"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.3",
+    "@mui/material": "^5.15.3",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.11",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase": "^10.7.1",
+    "mongoose": "^8.0.4",
+    "next": "14.0.4",
+    "nodemon": "^3.0.2",
+    "react": "^18",
+    "react-dom": "^18",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
