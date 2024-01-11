@@ -4,9 +4,10 @@ const userSchema = mongoose.Schema(
   {
   
     fullname:String,
-    birthdate:Number,
+    birthdate:String,
     Genre:String,
-    Gender:String
+    Gender:String,
+ 
   },
   { collection: "Users", timestamps: true }
 );

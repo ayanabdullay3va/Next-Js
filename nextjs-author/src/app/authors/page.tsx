@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import AppBar from '@mui/material/AppBar';
@@ -19,13 +19,32 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import axios from 'axios';
 
 const options = [""];
 
-export default function ControllableStates() {
-  const [value, setValue] = useState<string | null>(options[0]);
-  const [inputValue, setInputValue] = useState('');
+interface Authors{
+ 
+  fullname:String,
+  birthdate:String,
+  Genre:String,
+  Gender:String
 
+}
+
+export default function ControllableStates() {
+  const [data, setData] = useState<{  
+    fullname:String,
+    birthdate:String,
+    Genre:String,
+    Gender:String }[]>([])
+  const [inputValue, setInputValue] = useState('');
+useEffect(()=>{
+  axios("http://localhost:3003/Users").then((res)=>{
+   console.log('test: ',res.data);
+   setData(res.data)
+  })
+},[])
   return (
 <>
     <Box sx={{ flexGrow: 1 ,}}>
@@ -44,9 +63,6 @@ export default function ControllableStates() {
   <br />
   <br />
     <div>
-  
-
-
     <div>
       <FormControl sx={{ m: 1, minWidth: 120 }}>
         <InputLabel htmlFor="grouped-native-select">Grouping</InputLabel>
@@ -80,31 +96,40 @@ export default function ControllableStates() {
   
 
 <div>
-<Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
 
+  <>
+
+  {data && data.map((elem, i) => {
+ return <Card key={i} sx={{ maxWidth: 345 }}>
+    <CardMedia
+      component="img"
+      height="140"
+      image=""
+    />
+    <CardContent>
+      <Typography gutterBottom variant="h5" component="div">
+        {elem.fullname}
+      </Typography>
+      <Typography variant="body2" color="text.secondary">
+        BirthDate: {elem.birthdate}
+      </Typography>
+      <Typography variant="body2" color="text.secondary">
+        Genre: {elem.Genre}
+      </Typography>
+      <Typography variant="body2" color="text.secondary">
+        Gender: {elem.Gender}
+      </Typography>
+    </CardContent>
+    <CardActions>
+      <Link href='/detail'><Button size="small">Detail</Button></Link>
+    </CardActions>
+  </Card>
+})}
+
+</>
 </div>
      </div>
-      
+  
     </>
   );
 }
