@@ -1,0 +1,7 @@
+.image img::before{
+    background: url("https://preview.colorlib.com/theme/selling/images/hero_2.jpg.webp");
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
