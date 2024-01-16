@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+min-width: 400px;
+min-height: 70px;
+box-sizing: border-box;
+border:  1px solid black;
+background-color:#333333;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-text{
+    width: 200px;
+    height: 50px;
+    display: flex;
+}
+.logo-text img{
+    width:150px ;
+    margin: auto;
+}
+.icons{
+    display: flex;
+    justify-content: center ;
+    gap: 20px;
+}
