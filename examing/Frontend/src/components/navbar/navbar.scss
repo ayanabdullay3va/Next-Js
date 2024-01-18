@@ -1,0 +1,47 @@
+.container{
+    width: 100%;
+    min-width: 350px;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: #F8F9FA;
+    box-sizing: border-box;
+    border: 1px solid #F8F9FA;
+}
+.navbar-center{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+}
+.navbar-contact{
+    display: flex;
+    gap: 10px;
+}
+.facebook{
+    font-size: 30px !important;
+    
+ 
+}
+.instagram{
+    font-size: 30px !important;
+
+    }
+    .linkedn{
+        font-size: 30px !important;
+    
+        }
+        .twitter{
+            font-size: 30px !important;
+        
+            }
+            .linkedn{
+            font-size: 30px !important;
+        
+            }
