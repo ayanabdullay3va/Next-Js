@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .container{
     width: 100%;
     min-width: 350px;
@@ -14,11 +18,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
+    margin:25px auto;
 }
 .icons{
     display: flex;
     gap: 10px;
+}
+.telefon{
+    color: orange;
+}
+.mesaj{
+ color: orange;
 }
 .navbar-contact{
     display: flex;
@@ -41,7 +51,7 @@
             font-size: 30px !important;
         
             }
-            .linkedn{
+     .linkedn{
             font-size: 30px !important;
         
             }

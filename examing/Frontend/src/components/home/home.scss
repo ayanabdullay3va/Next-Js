@@ -1,0 +1,28 @@
+.end-navbar{
+width: 100%;
+box-sizing: border-box;
+}
+.transparent{
+    width: 50%;
+    min-width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.textt1{
+    font-size: 30px;
+}
+
+.nav-text{
+    display: flex;
+    gap: 50px;
+}
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation:animate__fadeInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }

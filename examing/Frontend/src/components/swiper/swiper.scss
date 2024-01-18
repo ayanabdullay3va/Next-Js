@@ -1,0 +1,74 @@
+.swiper1image{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./../../../public/image/hero_2.jpg.webp");
+    background-size: cover;
+    object-fit: fill;
+    
+}
+
+.swiper1image h1{
+    position: absolute;
+    margin: auto;
+    left: 400px;
+    bottom: 400px;
+    color: white;
+    font-size: 90px;
+}
+.swiper1image p{
+    position: absolute;
+    margin: auto;
+    left: 400px;
+    bottom: 320px;
+    color: white;
+    font-size: 30px;
+}
+.about-btn{
+    width: 7%;
+    height: 60px;
+    position: absolute;
+background-color: transparent;
+    border: 5px solid white;
+    color: white;
+    left: 400px;
+    bottom: 250px;
+    font-size: 20px;
+}
+.about-btn:hover{
+    width: 7%;
+    height: 60px;
+    cursor: pointer;
+    position: absolute;
+background-color: white;
+    border: 5px solid white;
+    color: black;
+    left: 400px;
+    bottom: 250px;
+    font-size: 20px;
+}
+.text-btn{
+
+    width: 10%;
+    height: 60px;
+    position: absolute;
+background-color: white;
+    border: 5px solid white;
+    color: black;
+    left: 600px;
+    bottom: 250px;
+    font-size: 20px;
+
+}
+.text-btn:hover{
+
+    width: 10%;
+    height: 60px;
+    position: absolute;
+background-color:transparent;
+    border: 5px solid white;
+    color: white;
+    left: 600px;
+    bottom: 250px;
+    font-size: 20px;
+
+}
