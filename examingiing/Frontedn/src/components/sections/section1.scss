@@ -1,0 +1,41 @@
+.sect-classes{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.cards{
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card1{
+    width: 30%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 400px;
+
+}
+
+.card3{
+    width: 30%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 400px;
+    .card3 p{
+        text-align: center;
+    }
+}
+.card2{
+    width: 30%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 400px;
+    .card2 p{
+        text-align: center;
+    }
+}

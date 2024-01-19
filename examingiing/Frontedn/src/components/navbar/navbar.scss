@@ -1,0 +1,60 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 100%;
+    min-width:0px;
+    max-height: 100px;
+    position: absolute;
+    z-index: 10;
+}
+.text-nav{
+    color: white;
+}
+.menu-texts{
+    color: white;
+}
+.icpns{
+    color: orange;
+}
+.response{
+    color: white;
+}
+.header{
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+}
+.text-nav{
+    font-size: 40px;
+}
+.response{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-texts{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.adding{
+    margin: auto;
+    gap: 5px;
+}
+
+.slider1{
+    width: 100%;
+   
+}
+.swipertext1 {
+    font-size: 70px;
+    font-weight: bolder;
+}
+// .swipertext1 p{
+//     right: 200px;
+// }
